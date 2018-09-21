@@ -10,7 +10,7 @@ import Foundation
 
 class DataProvider {
     
-    static let sharedIntance = DataProvider()
+    static let sharedInstance = DataProvider()
     
     var memberNames = [String]()
     var memberPersons = [PersonData]()
