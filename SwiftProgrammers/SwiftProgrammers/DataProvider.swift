@@ -15,7 +15,7 @@ class DataProvider {
     var memberNames = [String]()
     var memberPersons = [PersonData]()
     
-    init() {
+    private init() {
         self.memberNames = [
             "Peter",
             "Michaela",

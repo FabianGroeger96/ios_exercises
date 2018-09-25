@@ -28,7 +28,7 @@ class ViewControllerOld: UIViewController {
         titleLabel.font = titleLabel.font.withSize(22)
         self.view.addSubview(titleLabel)
         
-        let dataProvider = DataProvider.sharedIntance
+        let dataProvider = DataProvider.sharedInstance
         
         if usePersonData {
             var position: Int = Int(positionInit)

@@ -8,4 +8,11 @@
          location = "group:SwiftProgrammers/SwiftProgrammers.xcodeproj">
       </FileRef>
    </Group>
+   <Group
+      location = "container:"
+      name = "SW02">
+      <FileRef
+         location = "group:IB-Demo/IB-Demo.xcodeproj">
+      </FileRef>
+   </Group>
 </Workspace>
