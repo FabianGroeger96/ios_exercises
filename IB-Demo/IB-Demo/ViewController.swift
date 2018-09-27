@@ -22,7 +22,9 @@ class ViewController: UIViewController {
     }
 
     @IBAction func sliderValueChanged(_ sender: UISlider) {
+        
         sliderLabel.text =  String(format: "%.2f", sender.value)
+        
         if sender.value > Float(90) && self.sliderAlertShown == false {
             
             self.sliderAlertShown = true
@@ -39,13 +41,9 @@ class ViewController: UIViewController {
             )
             alertController.addAction(alertOkAction)
             self.present(alertController, animated: true, completion: nil)
-        } else {
+        } else if sender.value < Float(90) && self.sliderAlertShown == true {
             self.sliderAlertShown = false
         }
-        
-//        dispatch_async(dispatch_get_main_queue(){
-//            sliderLabel.text = currentValue
-//        }, <#() -> Void#>)
     }
     
     @IBAction func colorButtonValueChanged(_ sender: UISegmentedControl) {
@@ -84,6 +82,5 @@ class ViewController: UIViewController {
         
         self.present(alertController, animated: true, completion: nil)
     }
-    
 }
 
