@@ -15,4 +15,11 @@
          location = "group:IB-Demo/IB-Demo.xcodeproj">
       </FileRef>
    </Group>
+   <Group
+      location = "container:"
+      name = "SW03">
+      <FileRef
+         location = "group:ModalDemo/ModalDemo.xcodeproj">
+      </FileRef>
+   </Group>
 </Workspace>
