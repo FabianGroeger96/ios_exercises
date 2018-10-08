@@ -12,15 +12,15 @@ class ViewController: UIViewController {
     
     var appearanceCounter : Int = 0
 
-    @IBOutlet weak var counterLabel: UILabel!
+    @IBOutlet weak var counterLabel: UILabel?
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         // because 2 VC have the same class (one has the label, the other not)
-        if counterLabel != nil {
+        if let label = counterLabel {
             appearanceCounter += 1
-            counterLabel.text = String(appearanceCounter) + ". appearance"
+            label.text = String(appearanceCounter) + ". appearance"
         }
     }
     
@@ -38,9 +38,8 @@ class ViewController: UIViewController {
         //self.present(secondViewController, animated: true, completion: nil)
         
         // variant 2:
+        // newer version of present, apple wants that
         self.show(secondViewController, sender: sender)
-        
-        // the calling ViewController can decide how the new VC is presented
     }
     
     @IBAction func unwindToFirst(_ sender: UIStoryboardSegue){}
