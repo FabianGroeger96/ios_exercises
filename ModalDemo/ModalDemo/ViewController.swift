@@ -31,14 +31,13 @@ class ViewController: UIViewController {
 
     @IBAction func showSecondView(_ sender: UIButton) {
         let secondViewController : SecondViewController = SecondViewController()
-        secondViewController.modalPresentationStyle = .fullScreen
+        //secondViewController.modalPresentationStyle = .fullScreen
         secondViewController.modalTransitionStyle = .partialCurl
         
         // variant 1:
         //self.present(secondViewController, animated: true, completion: nil)
         
         // variant 2:
-        // newer version of present, apple wants that
         self.show(secondViewController, sender: sender)
     }
     
