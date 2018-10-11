@@ -22,4 +22,11 @@
          location = "group:ModalDemo/ModalDemo.xcodeproj">
       </FileRef>
    </Group>
+   <Group
+      location = "container:"
+      name = "SW04">
+      <FileRef
+         location = "group:EditList/EditList.xcodeproj">
+      </FileRef>
+   </Group>
 </Workspace>
