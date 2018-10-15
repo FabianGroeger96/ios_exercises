@@ -23,10 +23,13 @@ class EditViewController: UIViewController, UITextFieldDelegate {
         lastNameTextField.delegate = self
         postCodeTextField.delegate = self
         
-        ConfigureView()
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(EditViewController.dismissKeyboard))
+        view.addGestureRecognizer(tap)
+        
+        loadData()
     }
     
-    func ConfigureView() {
+    func loadData() {
         if let p = self.person {
             if let textField = self.firstNameTextField {
                 textField.text = p.firstName
@@ -41,11 +44,14 @@ class EditViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func saveAndExitPressed(_ sender: UIButton) {
-        person?.firstName = firstNameTextField.text!
-        person?.lastName = lastNameTextField.text!
-        // When string is Not convertable to Int --> set value to 0.
-        person?.plz = Int(postCodeTextField.text!) ?? 0
+        person?.firstName = firstNameTextField.text ?? ""
+        person?.lastName = lastNameTextField.text ?? ""
+        person?.plz = Int(postCodeTextField.text ?? "") ?? -1
         self.dismiss(animated: true, completion: nil)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
