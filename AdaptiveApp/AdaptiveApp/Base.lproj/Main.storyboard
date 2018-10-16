@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AdaptiveApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="fruits of the world" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XXP-OZ-Cdf">
+                                <rect key="frame" x="95.666666666666686" y="64" width="223" height="38.666666666666657"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="32"/>
+                                </variation>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="citron" translatesAutoresizingMaskIntoConstraints="NO" id="duh-47-i30">
+                                <rect key="frame" x="64" y="155" width="35" height="35"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cherry" translatesAutoresizingMaskIntoConstraints="NO" id="Odp-zU-Uz8">
+                                <rect key="frame" x="180.66666666666666" y="195.66666666666666" width="53" height="53"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="watermelon" translatesAutoresizingMaskIntoConstraints="NO" id="hKQ-qt-lWQ">
+                                <rect key="frame" x="797" y="155" width="35" height="35"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apple" translatesAutoresizingMaskIntoConstraints="NO" id="phN-UU-rGx">
+                                <rect key="frame" x="180.66666666666666" y="122.66666666666669" width="53" height="53"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="programmed by fabian gröger" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DQ2-A2-jig">
+                                <rect key="frame" x="20" y="821" width="229" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.65024870629999998" green="0.99695831540000002" blue="0.65088939670000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="XXP-OZ-Cdf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4Yl-LI-XVn"/>
+                            <constraint firstItem="phN-UU-rGx" firstAttribute="top" secondItem="XXP-OZ-Cdf" secondAttribute="bottom" constant="20" id="4iw-kH-ZEn"/>
+                            <constraint firstItem="duh-47-i30" firstAttribute="top" secondItem="phN-UU-rGx" secondAttribute="bottom" constant="20" id="5BX-9M-7Rw"/>
+                            <constraint firstItem="hKQ-qt-lWQ" firstAttribute="top" secondItem="Odp-zU-Uz8" secondAttribute="bottom" constant="20" id="7Fn-Hn-J8w"/>
+                            <constraint firstItem="Odp-zU-Uz8" firstAttribute="top" secondItem="phN-UU-rGx" secondAttribute="bottom" constant="20" id="MjO-BY-zTH"/>
+                            <constraint firstItem="duh-47-i30" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="P0p-2O-SAd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Odp-zU-Uz8" secondAttribute="trailing" constant="20" id="QO3-ye-aVZ"/>
+                            <constraint firstItem="XXP-OZ-Cdf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="UK1-sx-ijU"/>
+                            <constraint firstItem="phN-UU-rGx" firstAttribute="top" secondItem="XXP-OZ-Cdf" secondAttribute="bottom" constant="20" id="UZ6-hV-X9o"/>
+                            <constraint firstItem="Odp-zU-Uz8" firstAttribute="top" secondItem="XXP-OZ-Cdf" secondAttribute="bottom" constant="20" id="bzL-OM-mbc"/>
+                            <constraint firstItem="Odp-zU-Uz8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eNr-7p-zJV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hKQ-qt-lWQ" secondAttribute="trailing" constant="20" id="mNa-QG-82U"/>
+                            <constraint firstItem="XXP-OZ-Cdf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="qNR-7U-eb2"/>
+                            <constraint firstItem="phN-UU-rGx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rSd-bd-xGs"/>
+                            <constraint firstItem="XXP-OZ-Cdf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="t4Y-Js-qEe"/>
+                            <constraint firstItem="DQ2-A2-jig" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-20" id="ulG-mp-luw"/>
+                            <constraint firstItem="DQ2-A2-jig" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="yHa-7g-DPA"/>
+                            <constraint firstItem="phN-UU-rGx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="yay-Rf-AFN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <exclude reference="duh-47-i30"/>
+                                <exclude reference="hKQ-qt-lWQ"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="5BX-9M-7Rw"/>
+                                <exclude reference="P0p-2O-SAd"/>
+                                <exclude reference="7Fn-Hn-J8w"/>
+                                <exclude reference="QO3-ye-aVZ"/>
+                                <exclude reference="mNa-QG-82U"/>
+                                <exclude reference="4Yl-LI-XVn"/>
+                                <exclude reference="UK1-sx-ijU"/>
+                                <exclude reference="UZ6-hV-X9o"/>
+                                <exclude reference="yay-Rf-AFN"/>
+                                <exclude reference="bzL-OM-mbc"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="constraints">
+                                <exclude reference="qNR-7U-eb2"/>
+                                <exclude reference="t4Y-Js-qEe"/>
+                                <exclude reference="4iw-kH-ZEn"/>
+                                <exclude reference="rSd-bd-xGs"/>
+                                <exclude reference="MjO-BY-zTH"/>
+                                <exclude reference="eNr-7p-zJV"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="19.921875" y="23.4375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="apple" width="53.149604797363281" height="53.149604797363281"/>
+        <image name="cherry" width="53.149604797363281" height="53.149604797363281"/>
+        <image name="citron" width="53.149604797363281" height="53.149604797363281"/>
+        <image name="watermelon" width="53.149604797363281" height="53.149604797363281"/>
+    </resources>
+</document>

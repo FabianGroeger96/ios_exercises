@@ -29,4 +29,11 @@
          location = "group:EditList/EditList.xcodeproj">
       </FileRef>
    </Group>
+   <Group
+      location = "container:"
+      name = "SW05">
+      <FileRef
+         location = "group:AdaptiveApp/AdaptiveApp.xcodeproj">
+      </FileRef>
+   </Group>
 </Workspace>

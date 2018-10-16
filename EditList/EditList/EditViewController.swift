@@ -46,7 +46,7 @@ class EditViewController: UIViewController, UITextFieldDelegate {
     @IBAction func saveAndExitPressed(_ sender: UIButton) {
         person?.firstName = firstNameTextField.text ?? ""
         person?.lastName = lastNameTextField.text ?? ""
-        person?.plz = Int(postCodeTextField.text ?? "") ?? -1
+        person?.plz = Int(postCodeTextField.text ?? "0") ?? 0
         self.dismiss(animated: true, completion: nil)
     }
     
