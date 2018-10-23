@@ -36,4 +36,11 @@
          location = "group:AdaptiveApp/AdaptiveApp.xcodeproj">
       </FileRef>
    </Group>
+   <Group
+      location = "container:"
+      name = "SW06">
+      <FileRef
+         location = "group:ComAndCon/ComAndCon.xcodeproj">
+      </FileRef>
+   </Group>
 </Workspace>
